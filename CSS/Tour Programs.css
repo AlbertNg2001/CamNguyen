@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+/* Navbar */
+.navbar {
+	background-color: #ECECEC;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #838383;
+	transition: 0.125s all ease-in-out;
+	margin: 5px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #d34c39;	
+}
+.caption {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+}
+.caption h1 {
+	display: initial;
+	padding: 0px 20px 0px 20px;
+	color: #FFF;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	font-size: 3rem;
+}
+.traveltour {
+	padding-top: 70px;
+}
+.card img {
+	height: 300px;
+}
+.card a {
+	text-decoration: none;
+	color: #313131;
+	font-size: 20px;
+    font-weight: 800;
+	line-height: 1;
+}
+.card a:hover {
+    color: #d34c39;
+}
+.card .card-text p {
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+/* Footer */
+footer, nav {
+	display: block;
+}
+footer {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.contact {
+	text-align: center;
+}
+.contact hr {
+	height: 0;
+	border-radius: 2px;
+	border: 1px solid #269ccc;
+	width: 70%;
+}
+
+.contact img {
+	width: 30px;
+	height: 30px;
+}
+.contact nav {
+	display: inline-flex;
+}
+.contact .column-shrink {
+	padding: 10px;
+	flex: 0 0 auto;
+	max-width: 100%;
+	min-width: 0;
+}
+.contact .column-shrink a:link {
+	text-decoration: none;
+	color: black;
+}
+.contact .column-shrink a:hover {
+	color: #269ccc;
+	cursor: pointer;
+}
+@media (max-width: 576px) {
+	.caption {
+		top: 20%;
+		left: 20%;
+	}
+	.card img {
+		height: 250px; 
+	}
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+	.caption {
+		top: 35%;
+		left: 20%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.card img {
+		height: 400px;
+	}
+}

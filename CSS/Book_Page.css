@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+/* Navbar */
+.navbar {
+	background-color: #ECECEC;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #838383;
+	transition: 0.125s all ease-in-out;
+	margin: 5px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #d34c39;	
+}
+/* Body */
+.theme-image img {
+	width: 100%;
+	position: relative;
+	left: 0px;
+	right: 0px;
+	top: 50px;
+	margin: 0px;
+	object-fit: cover;
+}
+
+.general-content {
+	padding-top: 80px;
+}
+.row img {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.general-content .summary-area {
+	text-align: left;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+h2 {
+	font-size: 2em;
+	line-height: 1.1em;
+	font-weight: 300;
+	margin: 30px 0px;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1.3em;
+	font-weight: 600;
+	color: #454748;
+	margin: 25px 0px;
+}
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: normal;
+}
+
+
+a.learn-more, a.learn-more:visited {
+	font-size: 0.77778em;
+    line-height: 1;
+    color: #d34c39;
+    letter-spacing: 0.21429em;
+    text-transform: uppercase;
+    font-weight: bold;
+	text-decoration: none;
+	background-color: transparent;
+}
+a.learn-more:hover {
+	color: #269ccc;
+}
+a.read-more, a.read-more:visited {
+	color: #d34c39;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: transparent;
+}
+a.read-more:hover {
+	color: #269ccc;
+}
+/* Footer */
+footer, nav {
+	display: block;
+}
+footer {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.contact {
+	text-align: center;
+}
+.contact hr {
+	height: 0;
+	border-radius: 2px;
+	border: 1px solid #269ccc;
+	width: 70%;
+}
+
+.contact img {
+	width: 30px;
+	height: 30px;
+}
+.contact nav {
+	display: inline-flex;
+}
+.contact .column-shrink {
+	padding: 10px;
+	flex: 0 0 auto;
+	max-width: 100%;
+	min-width: 0;
+}
+.contact .column-shrink a:link {
+	text-decoration: none;
+	color: black;
+}
+.contact .column-shrink a:hover {
+	color: #269ccc;
+	cursor: pointer;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) { 
+	
+	.summary-area {
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.summary-area h2 {
+		font-size: 1.75em;
+	}
+	.summary-area h3 {
+		font-size: 1.25em;
+	}
+	.summary-area p {
+		font-size: 1em;
+	}
+}
+
